@@ -8,7 +8,29 @@ var songs = [
 // Make sure they match the same order as your array above
 
 
+var artists = [
+    "Bruno Mars",
+    "Drake",
+    "EXO"
+];
 
+var images = [
+    "https://consequenceofsound.files.wordpress.com/2016/10/screen-shot-2016-10-06-at-11-17-15-pm.png?w=380&h=380&crop=1;maxHeight=145;maxWidth=222",
+    "https://i.ytimg.com/vi/KRaPykuwCiw/maxresdefault.jpg;maxHeight=145;maxWidth=222",
+    "https://kpopcolorcodedlyrics.files.wordpress.com/2012/01/exo.jpg?w=809;maxHeight=145;maxWidth=222"
+];
+
+var links = [
+    "https://www.youtube.com/watch?v=UqyT8IEBkvY",
+    "https://www.youtube.com/watch?v=KRaPykuwCiw",
+    "https://www.youtube.com/watch?v=leu-cTvMWTA"
+];
+
+var lengths = [
+    227,
+    201,
+    289
+];
 
 
 
