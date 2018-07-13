@@ -17,13 +17,30 @@ function displaySongInfo(){
         $("#songs").append("<p>" + song + "</p>"); 
     });
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
+        images.forEach(function(image) {
+        $("#images").append("<img src='" + image + "'>");   
+    });
+    artists.forEach(function(artist) {
+        $("#artists").append("<p> By: " + artist + "</p>");   
+    });
+
+    lengths.forEach(function(length) {
+        $("#lengths").append("<p>" + length + "</p>"); 
+    });
+
+    links.forEach(function(link) {
+        $("#links").append("<a href='" + link + "'> Listen </a>"); 
+    });
 
 }
 
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
-
+    $("#images").empty();
+    $("#artists").empty();
+    $("#lengths").empty();
+    $("#links").empty();
 
 }
 
