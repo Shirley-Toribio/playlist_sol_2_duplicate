@@ -1,35 +1,40 @@
 // BELOW Update the songs to your favorites songs. There should be at least 4.
 var songs = [
-    "Boo'd Up",
-    "Nice For What",
-    "Universe"
+    "99.9",
+    "Brother",
+    "PYNK",
+    "Brujas"
 ];
 // BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 
 
 var artists = [
-    "Ella Mai",
-    "Drake",
-    "EXO"
+    "Mob Choir",
+    "Stuck in the Sound",
+    "Janelle Monae",
+    "Princess Nokia"
 ];
 
 var images = [
-    "https://rnbmain-thisisrnb.netdna-ssl.com/wp-content/uploads/2018/04/Ella-Mai-Bood-Up-Vid.jpg",
-    "https://i.ytimg.com/vi/KRaPykuwCiw/maxresdefault.jpg;maxHeight=145;maxWidth=222",
-    "https://kpopcolorcodedlyrics.files.wordpress.com/2012/01/exo.jpg?w=809;maxHeight=145;maxWidth=222"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXddhEHsHmTEDBDFqBQV0iKNh7yD5dqHbVW9uhdW2f6GXSPvHIVQ",
+    "https://m.media-amazon.com/images/M/MV5BYWQwMTc4N2QtYTdjMy00YTZhLWJkNDAtMDk4YTIwYTQ3MTFiXkEyXkFqcGdeQXVyNjQzMjk4MDQ@._V1_.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-S3dIljSJQ-vGlHQsGN4BLyz7B0Sj9Hxu52Ks0jwCSUiphCiGhQ",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZz-NS-rgwoJckiOmjbGBiREg1oQxJNA82Byueu6PJbJXU8UuhXA"
 ];
 
 var links = [
-    "https://www.youtube.com/watch?v=6YNZlXfW6Ho",
-    "https://www.youtube.com/watch?v=KRaPykuwCiw",
-    "https://www.youtube.com/watch?v=leu-cTvMWTA"
+    "https://www.youtube.com/watch?v=DpCfhRVqJWU",
+    "https://www.youtube.com/watch?v=J417T5crtm4",
+    "https://www.youtube.com/watch?v=PaYvlVR_BEc",
+    "https://www.youtube.com/watch?v=iUcAPCxrSQs"
 ];
 
 var lengths = [
     241,
     201,
-    289
+    289,
+    295
 ];
 
 
@@ -39,7 +44,7 @@ function displaySongInfo(){
         $("#songs").append("<p>" + song + "</p>"); 
     });
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-        images.forEach(function(image) {
+    images.forEach(function(image) {
         $("#images").append("<img src='" + image + "'>");   
     });
     artists.forEach(function(artist) {
@@ -68,9 +73,14 @@ function emptySongInfo(){
 
 function addSongInfo(){
     var songName = $("#song").val();
+    var artist = $("#artist").val();
+    var image = $("#image").val();
+    var video = $("#link").val();
     songs.push(songName);
+    artists.push(artist);
+    images.push(image);
+    links.push(video);
     // BELOW write the code to add new items to each of the other arrays
-
 
 }
 
